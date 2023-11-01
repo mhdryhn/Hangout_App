@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".explore_fragment"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/pacifico_regular"
+            android:text="Home"
+            android:textColor="@color/gold"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/EventsNear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/pacifico_regular"
+            android:text="Events Near you"
+            android:layout_below="@+id/label"
+            android:textColor="@color/gold"
+            android:textSize="28dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nearbyeventrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EventsNear"
+            android:orientation="horizontal"
+            />
+
+        <TextView
+            android:id="@+id/EventsSports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/pacifico_regular"
+            android:text="Get Active and Sweaty"
+            android:layout_below="@+id/nearbyeventrecyclerview"
+            android:textColor="@color/gold"
+            android:textSize="28dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sportseventrecyvlerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/EventsSports"
+            />
+
+            <TextView
+                android:id="@+id/EventsEducational"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/pacifico_regular"
+                android:text="Unlock your learning potential."
+                android:layout_below="@+id/sportseventrecyvlerview"
+                android:textColor="@color/gold"
+                android:textSize="28dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/educationaleventrecyvlerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/EventsEducational"
+                />
+
+            <TextView
+                android:id="@+id/EventsLeisure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/pacifico_regular"
+                android:text="Relax and Unwind Together"
+                android:layout_below="@+id/educationaleventrecyvlerview"
+                android:textColor="@color/gold"
+                android:textSize="28dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Leisureeventrecyvlerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/EventsLeisure"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

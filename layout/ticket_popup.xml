@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@color/gold">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="170dp"
+        android:background="@color/white"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/TicketHolder_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/opensanssemibold"
+            android:textSize="24dp"
+            />
+
+        <TextView
+            android:id="@+id/Event_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_below="@+id/TicketHolder_Name"
+            android:textSize="20sp"
+            android:text="Event Name"
+            />
+
+        <TextView
+            android:id="@+id/HngOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_above="@id/Disclaimer"
+            android:textSize="15sp"
+            android:text="HngOut"
+            />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/img_rectangle22" />
+
+        <TextView
+            android:id="@+id/Disclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_alignParentBottom="true"
+            android:textSize="10dp"
+            android:text="Show to event organizer along with any form of identification for proof"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

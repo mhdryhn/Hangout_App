@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/eventimage"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                />
+
+            <Button
+                android:id="@+id/more_infobutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/eventname"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowRadius="3"
+                android:shadowDy="2"
+                android:shadowDx="2"
+                android:textStyle="bold"
+                android:text="Event Name"
+                />
+
+            <TextView
+                android:id="@+id/eventtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Event Time"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowRadius="3"
+                android:shadowDy="2"
+                android:shadowDx="2"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_below="@id/eventname"/>
+
+            <TextView
+                android:id="@+id/eventdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:text="Event Date"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowRadius="3"
+                android:shadowDy="2"
+                android:shadowDx="2"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_below="@id/eventtime"/>
+
+            <TextView
+                android:id="@+id/docid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="5dp"
+                android:text=""
+                android:textColor="#00FFFFFF"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

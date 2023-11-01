@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="700dp"
+    android:layout_gravity="center"
+    tools:context=".eventdetails_pop_up">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cross"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="x"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/pacifico_regular"
+        android:text="Event Info"
+        android:textColor="@color/gold"
+        android:layout_below="@id/cross"
+        android:textSize="36dp" />
+
+    <TextView
+        android:id="@+id/Event_Category"
+        android:layout_below="@+id/label"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:paddingStart="15dp"
+        android:text="Event Category"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_regular"
+        />
+
+    <TextView
+        android:id="@+id/Event_Category_Tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Event_Category"
+        android:paddingStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="viewStart"
+        android:textColor="@color/gold"
+        />
+
+    <TextView
+        android:id="@+id/Event_Time"
+        android:layout_below="@+id/Event_Category_Tb"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:text="Event Time"
+        android:paddingStart="15dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_regular"
+        />
+
+    <TextView
+        android:id="@+id/Event_Time_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Event_Time"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:singleLine="true"
+        android:paddingStart="15dp"
+        android:text=""
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="viewStart"
+        android:textColor="@color/gold"
+         />
+
+    <TextView
+        android:id="@+id/Event_Date"
+        android:layout_below="@+id/Event_Time_tb"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="15dp"
+        android:layout_width="match_parent"
+        android:text="Event Date"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_regular"
+        />
+
+    <TextView
+        android:id="@+id/Event_Date_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Event_Date"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:backgroundTint="@color/white"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="viewStart"
+        android:textColor="@color/gold"
+        />
+
+    <TextView
+        android:id="@+id/Event_Location"
+        android:layout_below="@+id/Event_Date_tb"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:text="Event Location"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_regular"
+        />
+
+    <TextView
+        android:id="@+id/Event_Location_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:maxLines="3"
+        android:layout_below="@+id/Event_Location"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:paddingStart="15dp"
+        android:text=""
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="viewStart"
+        android:textColor="@color/gold"
+        />
+
+    <TextView
+        android:id="@+id/Additional_Info"
+        android:layout_below="@+id/Event_Location_tb"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="15dp"
+        android:layout_width="match_parent"
+        android:text="Additional Info"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_regular"
+        />
+
+    <TextView
+        android:id="@+id/Additional_Info_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Additional_Info"
+        android:layout_marginTop="5dp"
+        android:paddingStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint=""
+        android:inputType="textMultiLine"
+        android:padding="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:ellipsize="end" android:gravity="center"
+        android:id="@+id/btnjoinevent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_width="match_parent"
+        android:paddingBottom="9dp"
+        android:layout_below="@id/Additional_Info_tb"
+        android:paddingEnd="18dp"
+        android:paddingStart="30dp"
+        android:paddingTop="9dp"
+        android:singleLine="true"
+        android:text="Join Event"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/my_button_bg"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/pacifico_regular"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/docid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text=""
+        android:textColor="#00FFFFFF"
+        />
+
+     </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".addevent_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/pacifico_regular"
+            android:text="Create a new Event"
+            android:textColor="@color/gold"
+            android:textSize="36dp" />
+
+
+            <TextView
+                android:id="@+id/Event_Banner"
+                android:layout_below="@+id/label"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Event Banner"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <ImageView
+                android:id="@+id/ImagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/Event_Banner"
+                android:background="@drawable/border"
+                />
+
+            <TextView
+                android:id="@+id/selectimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:layout_marginTop="165dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/Event_Name"
+                android:layout_below="@+id/ImagePreview"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Event Name"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <EditText
+                android:id="@+id/Event_Name_tb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Event_Name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:hint="Event Name"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/Event_Category"
+                android:layout_below="@+id/Event_Name_tb"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Event Category"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/Category_Layout"
+                android:layout_below="@id/Event_Category"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/DropDownBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pick a Category"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/Event_Date"
+                android:layout_below="@+id/Category_Layout"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Event Date"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <Button
+                android:id="@+id/Event_Date_tb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Event_Date"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                android:text="JAN 01 2020"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                style="?android:spinnerStyle"
+                android:singleLine="true"
+                android:padding="20dp"
+                />
+
+            <TextView
+                android:id="@+id/Event_Time"
+                android:layout_below="@+id/Event_Date_tb"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Event Time"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <Button
+                android:id="@+id/Event_Time_tb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Event_Time"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                android:singleLine="true"
+                android:text="6:00"
+                android:fontFamily="@font/poppins_regular"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/Max_members"
+                android:layout_below="@+id/Event_Time_tb"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Maximum members"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <EditText
+                android:id="@+id/Max_members_tb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Max_members"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:hint="Maximum Members"
+                android:singleLine="true"
+                android:inputType="number"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/Additional_Info"
+                android:layout_below="@+id/Max_members_tb"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Additional Info"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <EditText
+                android:id="@+id/Additional_Info_tb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Additional_Info"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:hint="Any Additional Information you would like participants to know."
+                android:inputType="textMultiLine"
+                android:padding="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnSearchLocation"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_width="200dp"
+                android:paddingBottom="9dp"
+                android:layout_below="@id/Additional_Info_tb"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp"
+                android:paddingTop="9dp"
+                android:singleLine="true"
+                android:text="Set Event location"
+                android:textSize="12dp"
+                android:textColor="@color/orange"
+                android:background="@drawable/my_button_bg"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:textAllCaps="false"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btncreateevent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_width="match_parent"
+                android:paddingBottom="9dp"
+                android:layout_below="@id/btnSearchLocation"
+                android:paddingEnd="18dp"
+                android:paddingStart="30dp"
+                android:paddingTop="9dp"
+                android:singleLine="true"
+                android:text="Create Event"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:background="@drawable/my_button_bg"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/pacifico_regular"
+                android:textAllCaps="false"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

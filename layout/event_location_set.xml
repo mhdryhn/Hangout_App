@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="700dp"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Set Event Location"
+        android:fontFamily="@font/opensanssemibold"
+        android:textSize="28dp"/>
+
+    <EditText
+        android:id="@+id/Searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter Location"
+        android:layout_below="@id/Label"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+    <ListView
+        android:id="@+id/ListPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Searchbar"
+        />
+
+
+</RelativeLayout>

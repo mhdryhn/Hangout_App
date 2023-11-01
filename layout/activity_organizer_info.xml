@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".member_info">
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            >
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtHngOut"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="77dp"
+                android:layout_marginStart="77dp"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="HngOut"
+                android:textSize="36dp"
+                android:fontFamily="@font/opensansbold"
+                android:textColor="@color/gold"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAsorganizer"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="as Organizer"
+                android:layout_below="@+id/txtHngOut"
+                android:fontFamily="@font/opensanssemibold"
+                android:textSize="15dp"
+                android:textColor="@color/gold"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/Organizer_Name"
+                android:layout_below="@+id/txtAsorganizer"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Organizer Name"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <EditText
+                android:id="@+id/Name_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Organizer_Name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:hint="Type your name here"
+                android:singleLine="true"
+                android:padding="20dp" />
+
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_below="@+id/Name_info"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Email"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <EditText
+                android:id="@+id/Email_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Email"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Type your email here"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/Number"
+                android:layout_below="@+id/Email_info"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Contact Number"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <EditText
+                android:id="@+id/Number_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Number"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:hint="Type your Number here"
+                android:singleLine="true"
+                android:inputType="number"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/Password"
+                android:layout_below="@+id/Number_info"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Enter Password"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_below="@id/Password"
+                android:id="@id/Password_layout"
+                >
+
+            <EditText
+                android:id="@+id/Password_info"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Type your password here"
+                android:singleLine="true"
+                android:background="@color/white"
+                android:inputType="textPassword"
+                android:padding="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/Confirm_Password"
+                android:layout_below="@+id/Password_layout"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:text="Confirm Password"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_below="@id/Confirm_Password"
+                android:id="@+id/Password_layout2"
+                >
+
+                <EditText
+                    android:id="@+id/Cpassword_info"
+                    android:layout_width="375dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Type your password here"
+                    android:singleLine="true"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to the terms and conditions"
+                android:id="@+id/cb1"
+                android:layout_below="@id/Password_layout2"
+                android:layout_marginStart="20dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnCreateAccount"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_width="match_parent"
+                android:paddingBottom="9dp"
+                android:layout_below="@id/cb1"
+                android:paddingEnd="18dp"
+                android:paddingStart="30dp"
+                android:paddingTop="9dp"
+                android:singleLine="true"
+                android:text="Create Account"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:background="@drawable/my_button_bg"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/poppins_regular"
+                android:textAllCaps="false"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnReturn"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_width="match_parent"
+                android:paddingBottom="9dp"
+                android:layout_below="@id/btnCreateAccount"
+                android:paddingEnd="18dp"
+                android:paddingStart="30dp"
+                android:paddingTop="9dp"
+                android:singleLine="true"
+                android:text="Go Back"
+                android:textSize="24dp"
+                android:textColor="@color/orange"
+                android:background="@drawable/my_button_bg"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:textAllCaps="false"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

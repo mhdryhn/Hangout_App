@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="700dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Set Location"
+        android:fontFamily="@font/opensanssemibold"
+        android:textSize="28dp"/>
+
+    <EditText
+        android:id="@+id/Searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/Label"
+        android:hint="Enter Location"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+    <ListView
+        android:id="@+id/ListPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_below="@id/Searchbar"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:ellipsize="end" android:gravity="center"
+        android:id="@+id/createacct2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_width="match_parent"
+        android:paddingBottom="9dp"
+        android:layout_below="@id/ListPlaces"
+        android:paddingEnd="18dp"
+        android:paddingStart="30dp"
+        android:paddingTop="9dp"
+        android:singleLine="true"
+        android:text="Create Account"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:background="@drawable/my_button_bg"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/poppins_regular"
+        android:textAllCaps="false"
+        />
+
+
+
+</RelativeLayout>

@@ -1,5 +1,5 @@
 # Hangout_App
-Event creation and participation Android application I developed my final year project during my degree. The app was coded in Java (backend) and XML (frontend). Canva was used for the design of the UI, and Google's Firebase was used as the database for the application.
+Event creation and participation Android application I developed my for final year project during my degree. The app was coded in Java (backend) and XML (frontend). Canva was used for the design of the UI, and Google's Firebase was used as the database for the application.
 
 For more information, feel free to check out my final report linked above!
 
